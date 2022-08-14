@@ -1,0 +1,65 @@
+{
+  "id": "3585123",
+  "name": "juejin-react",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "201571",
+      "name": "3.1-搜索",
+      "font_class": "31sousuo",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "31170155",
+      "name": "点赞",
+      "font_class": "dianzan1",
+      "unicode": "e771",
+      "unicode_decimal": 59249
+    },
+    {
+      "icon_id": "29865155",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "29923324",
+      "name": "rcd-dialogue",
+      "font_class": "rcd-dialogue",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "30019544",
+      "name": "caret-bottom",
+      "font_class": "caret-bottom",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "30019574",
+      "name": "message-solid",
+      "font_class": "message-solid",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "30175729",
+      "name": "Eye",
+      "font_class": "Eye",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "31168185",
+      "name": "取消",
+      "font_class": "quxiao",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    }
+  ]
+}
