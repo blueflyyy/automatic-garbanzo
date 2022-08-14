@@ -4,6 +4,9 @@ import { HashRouter } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
 
 import {
+    Centrestyle
+} from './style';
+import {
     Nav
 } from './style';
 
@@ -25,9 +28,19 @@ export default memo(function JJHome(props) {
                     <div className="lis"><NavLink to="/home/read">阅读</NavLink></div>
                     <div className="lis last"><NavLink to="/home/tags">标签管理</NavLink></div>
                 </div>
+
             </Nav>
-            <div>{renderRoutes(route.route.routes)}</div>
-        </HashRouter>
+            <Centrestyle>
+                <div className="centre">
+                    <div className="centreleft">
+                        {renderRoutes(route.route.routes)}
+                    </div>
+                    <div className="centreright">
+                        <h2>siveright</h2>
+                    </div>
+                </div>
+            </Centrestyle>
+        </HashRouter >
     )
 
 })

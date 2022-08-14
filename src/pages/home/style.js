@@ -34,4 +34,34 @@ border-bottom: 1px solid #f0ebeb;
     margin-right: 0px;
     margin-left:279px ;
 }
+
+`
+export const Centrestyle = styled.div`
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    background-color: #f4f5f5;
+    display: flex;
+    justify-content : center;
+     .centre {
+        display: flex;
+        height: auto;
+        justify-content : center;
+        width: 960px; 
+        height: auto;
+        margin-top: 14px;
+     }
+     .centreleft{ 
+        width: 700px;
+        background-color: #fff;
+      
+        margin-right:20px;
+     }
+     .centreright {
+        width: 240px;
+        background-color: #fff;
+      
+     }
+   
 `

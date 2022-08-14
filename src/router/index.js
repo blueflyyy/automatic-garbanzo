@@ -25,9 +25,9 @@ const routes = [{
     routes: [{
         path: "/home",
         exact: true,
-        render: () => {
+        render: () => (
             <Redirect to="/home/comprehensive" />
-        }
+        )
     },
     {
         path: "/home/comprehensive",
@@ -35,9 +35,9 @@ const routes = [{
         routes: [{
             path: "/home/comprehensive",
             exact: true,
-            render: () => {
+            render: () => (
                 <Redirect to="/home/comprehensive/recommend"></Redirect>
-            }
+            )
         },
         {
             path: "/home/comprehensive/recommend",

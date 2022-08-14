@@ -4,6 +4,7 @@ import { renderRoutes } from 'react-router-config';
 
 import routes from './router';
 
+
 import Nav from './components/app-header/nav';
 
 import {
@@ -11,12 +12,10 @@ import {
 } from './style';
 export default memo(function App() {
 
-    return (
-        <HashRouter>
-
-            <Nav />
-            <CenterWrapper className='center'> {renderRoutes(routes)}</CenterWrapper>
-
-        </HashRouter>
+    return (<HashRouter >
+        <Nav />
+        <CenterWrapper className='center' > {renderRoutes(routes)}
+        </CenterWrapper>
+    </HashRouter>
     )
 })

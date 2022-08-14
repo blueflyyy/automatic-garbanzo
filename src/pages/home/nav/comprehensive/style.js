@@ -2,36 +2,30 @@ import styled from "styled-components";
 
 
 
-export const Centrestyle = styled.div `
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    background-color: #f4f5f5;
-    display: flex;
-    justify-content : center;
-     .centre {
-        display: flex;
-        height: auto;
-        justify-content : center;
-        width: 960px; 
-        height: auto;
-        margin-top: 14px;
-     }
-     .centreleft{ 
-        width: 700px;
-        background-color: #fff;
-      
-        margin-right:20px;
-     }
-     .centreright {
-        width: 240px;
-        background-color: #fff;
-      
-     }
+// export const Centrestyle = styled.div `
+//     * {
+//         margin: 0;
+//         padding: 0;
+//     }
+//     background-color: #f4f5f5;
+//     display: flex;
+//     justify-content : center;
+//      .centre {
+//         display: flex;
+//         height: auto;
+//         justify-content : center;
+//         width: 960px; 
+//         height: auto;
+//         margin-top: 14px;
+//      }
+//      .centreleft{ 
+//         width: 700px;
+//         background-color: #fff;
 
-    
-`
+//         margin-right:20px;
+//      }
+
+// `
 export const Centreleftstyle = styled.div `
   .header-list {
     padding-left: 12px ;

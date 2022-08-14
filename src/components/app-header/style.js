@@ -78,15 +78,17 @@ ul li {
    color:#515767;
    
 }
-ul .lis:hover{
+.lis:hover{
    border-bottom:2px solid #1e80ff;
+   
    }
 ul,li:hover{
+   color:#2c2a2a;
    cursor: pointer;
-
+}
+.active:hover {
    color:#2c2a2a;
 }
-
 `
 
 export const HeaderRight = styled.div `
