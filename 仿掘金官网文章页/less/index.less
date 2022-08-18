@@ -1,0 +1,249 @@
+@import 'base';
+body{
+    background-color: rgba(244, 245, 245);
+}
+
+// 版心
+.wrapper{
+    
+    margin-left: 380px;
+    margin-top: 20px;
+    display: block;
+    width: 820px;
+    min-height: 500px;
+    background-color: rgba(255, 255, 255);
+}
+
+//主体内容
+.main{
+    padding: 32px 32px 40px 32px;
+    .title{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .author{
+        display: flex;
+        position: relative;
+        .pic{
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+            img{
+                border-radius: 50%;
+            }
+        }
+
+        .author-box{
+            flex-direction: column;
+            display: flex;
+            .author-name{
+                display: flex;
+                span{
+                    color: #515767;
+                    vertical-align: center;
+                }
+                img{
+                    margin-left: 4px;
+                    width: 35px;
+                    height: 16px;
+                }
+            }
+            .introduction{
+                span{
+                    font-size: 1.167 * 12px;
+                    color: #8a919f;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        .fllow{
+            position: absolute;
+            right: 0;
+            padding: 0 12px;
+            border: 1px solid rgba(30,128,255,.3);
+            background: rgba(30,128,255,.05);
+            .fllow_box{
+                width: 44px;
+                height: 34px;
+                font-size: 14px;
+                color: #1e80ff;
+                text-align: center;
+                line-height: 34px;
+            }
+            &:hover{
+                background-color: rgba(232, 242, 255);
+            }
+        }
+
+    }
+}
+
+//左侧边栏
+.aside_left{
+    position: fixed;
+    left: 300px;
+    top: 75px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .icon{
+        width: 48px;
+        height: 48px;
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 50%;
+        text-align: center;
+
+        .icon-good-fill::before,
+        .icon-comments-fill::before,
+        .icon-collection-fill::before,
+        .icon-resonserate-fill::before,
+        .icon-warning-fill::before,
+        .icon-liulanmoshi::before
+        {
+            font-size: 24px;
+            width: 48px;
+            line-height: 48px;
+            color: #8a919f;
+        }
+
+        &:hover .icon-good-fill::before,
+        &:hover .icon-comments-fill::before,
+        &:hover .icon-collection-fill::before,
+        &:hover .icon-resonserate-fill::before,
+        &:hover .icon-warning-fill::before,
+        &:hover .icon-liulanmoshi::before{
+            color: rgba(81, 87, 103);
+        }
+
+        .top,
+        .buttom{
+            position: absolute;
+            top: 0;
+            left: 75%;
+            height: 17px;
+            line-height: 17px;
+            padding: 0 5px;
+            border-radius: 9px;
+            font-size: 11px;
+            text-align: center;
+            background-color: #c2c8d1;
+            color: #fff
+        }
+
+        .buttom{
+            top: 68px;
+        }
+
+        &:nth-child(4){
+            position: relative;
+            .share{
+                height: 150px;
+                display: none;
+                position: absolute;
+                top: 0;
+                left: calc(100% + 14px);
+                z-index: 30;
+                background: #fff;
+                border-radius: 4px;
+                padding: 9px 0;
+                box-shadow: 0 8px 24px rgb(81 87 103 / 16%);
+
+                ul{
+                    flex-direction: column;
+                    display: flex;
+                    li{
+                        width: 114px;
+                        height: 44px;
+                        padding: 0 15px;
+                        display: flex;
+                        i{
+                            font-size: 18px;
+                            line-height: 44px;
+                        }
+                        span{
+                            font-size: 14px;
+                            margin-left: 8px;
+                            line-height: 44px;
+                        }
+
+                        &:hover{
+                            background: #f5f5f5;
+                        }
+                        //微信扩展
+                        .wechat_qr{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            position: absolute;
+                            top: 0;
+                            left: calc(100% + 8px);
+                            border-radius: 4px;
+                            background-color: #fff;
+                            padding: 20px 0 16px;
+                            box-shadow: 0 8px 24px rgb(81 87 103 / 16%);
+                            width: 120px;
+                            img{
+                                height: 80px;
+                                width: 80px;
+                            }
+                            .title{
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #515767;
+                                margin-top: 12px;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+
+            }
+            .after{
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 50%;
+            }
+        }
+    }
+
+    // 侧边栏第4个小图标下的下划线
+    .party{
+        position: relative;
+        left:6px;
+        display: block;
+        width: 32px;
+        height: 20px;
+        border-top: 1px solid rgba(228, 230, 235);
+    }
+
+    #immersion{
+        position: relative;
+        .black_box{
+            width: 74px;
+            height: 44px;
+            z-index: 1030;
+            display: none;
+            position: absolute;
+            top:-46px;
+            left: -13px;
+            background: #000;
+            opacity: .8;
+            box-shadow: 0 4px 8px rgb(0 0 0 / 16%);
+            background-color: #000;
+            text-align: center;
+            line-height: 44px;
+            font-size: 12px;
+            color: #fff;
+        }
+    }
+    
+}
+
+
